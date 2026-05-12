@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "npm run bddgen && mobilewright test",
+    "test:ios": "npm run bddgen && mobilewright test --project ios",
+    "test:android": "npm run bddgen && mobilewright test --project android",
+    "test:parallel": "npm run bddgen && mobilewright test --workers 4",
+    "test:tag": "npm run bddgen && cross-env-shell mobilewright test --grep \"$TAG\"",
+    "report:full": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "report:generate": "allure generate allure-results --clean -o allure-report",
+    "report:open": "allure open allure-report",
+    "report:single": "mobilewright show-report",
+    "install:agent": "mobilewright install",
+    "install:agent:force": "mobilewright install --force",
+    "devices": "mobilewright devices",
+    "doctor": "mobilewright doctor",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts",
+    "clean": "rimraf .features-gen test-results reports allure-results allure-report"
+  }
+}

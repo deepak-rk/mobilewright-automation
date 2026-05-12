@@ -141,3 +141,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# mobilewright-automation — generated / runtime artifacts
+.env
+.features-gen/
+test-results/
+reports/
+allure-results/
+allure-report/
+dist/
+screenshots/

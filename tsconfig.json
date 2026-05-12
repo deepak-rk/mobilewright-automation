@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
+  },
+  "include": [
+    "mobilewright.config.ts",
+    "playwright.config.ts",
+    "config/**/*.ts",
+    "features/**/*.ts",
+    "steps/**/*.ts",
+    "support/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".features-gen"
+  ]
+}
